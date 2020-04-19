@@ -43,22 +43,24 @@
 	}
 	
 	
-	 ol > li::before {
+	ol > li::before {
 		content: counter(li);
 		counter-increment: li;
 		position: absolute;
 		top: 0;
 		left: -2em;
-		width: 29px;
-		height: 25px;
+		width: 45px;
+		height: 35px;
 		margin-right: 25px;
-		padding-top: 4px;
+		padding-top: 10px;
 		color: #fff;
-		background: #1686d9;
+		background: #217169;
 		text-align: center;
 		-webkit-border-radius: 15px;
 		-moz-border-radius: 15px;
-		border-radius: 15px;
+		border-radius: 50%;
+		border: solid 3px #ddd;
+		font-size: 25px;
 	}
 	
 	ul {
