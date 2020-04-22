@@ -1,0 +1,70 @@
+<html> 
+
+  <!-- animated bar HTML CSS --> 
+  
+  <head> 
+  
+    <style> 
+	   html {
+           padding: 300px;
+       }
+	   
+		@keyframes movingbar {
+		   0%   { left:0px; }
+		   100% { left:400px;}
+		}
+	   
+	     
+	
+	  .decoration-inside::before {
+			background: #6CB2B0;
+			width: 10px;
+			height: 10px;
+			content: "";
+			display: block;
+			border-radius: 5px;
+			position: absolute;
+			top: -7px;
+			left: 55px;
+			animation: linear infinite alternate;
+			animation-name: movingbar;
+			animation-duration: 5s;
+			
+		}
+		
+		.decoration-inside {
+			height: 1px;
+			display: inline-block;
+			border-top: 5px solid #d2e8e7;
+			width: 100%;
+			max-width: 400px;
+			position:relative; 
+			
+		}
+		
+		.decoration {
+			line-height: 0em;
+            text-align: center;
+
+		}
+	
+	
+	</style>
+  
+  
+  </head> 
+  
+  <body>
+  
+  
+  <div class="wrap">
+  
+   <div class="decoration">
+   
+		<div class="decoration-inside"></div>
+		
+	</div>
+	
+   </div>
+ </body>
+</html> 
